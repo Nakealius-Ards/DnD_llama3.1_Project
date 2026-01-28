@@ -571,7 +571,7 @@ public class DnD_Project extends Application {
 				if (dragboard.hasFiles()) {
 				    File file = dragboard.getFiles().get(0);
 				    if (isImageFile(file)) {
-				        droppedImageFile = file; // ✅ Store the file
+				        droppedImageFile = file; //  Store the file
 				        Image image = new Image(file.toURI().toString());
 				        imageView.setImage(image);
 				        imageView.setFitWidth(550);
