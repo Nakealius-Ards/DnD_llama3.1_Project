@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.DnDProject.org</groupId>
+  <artifactId>DnD_Project</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+
+  <name>DnD_Project</name>
+  <description>A simple DnD_Project.</description>
+  <!-- FIXME change it to the project's website -->
+  <url>http://www.example.com</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>8</maven.compiler.source>
+    <maven.compiler.target>8</maven.compiler.target>
+  </properties>
+
+  <dependencies>
+     <!-- JUnit 5 -->
+    <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter</artifactId>
+        <version>5.10.0</version>
+        <scope>test</scope>
+    </dependency>
+
+    <!-- OpenAI Java client -->
+    <dependency>
+        <groupId>com.theokanning.openai-gpt3-java</groupId>
+        <artifactId>api</artifactId>
+        <version>0.17.0</version>
+    </dependency>
+
+    <!-- Jackson -->
+    <dependency>
+    	<groupId>com.fasterxml.jackson.core</groupId>
+    	<artifactId>jackson-databind</artifactId>
+    	<version>2.15.2</version>
+	</dependency>
+	
+	<dependency>
+    	<groupId>org.apache.httpcomponents.client5</groupId>
+    	<artifactId>httpclient5</artifactId>
+    	<version>5.2.1</version>
+	</dependency>
+
+  </dependencies>
+
+
+
+
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+        <plugin>
+          <artifactId>maven-clean-plugin</artifactId>
+          <version>3.4.0</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-site-plugin</artifactId>
+          <version>3.12.1</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-project-info-reports-plugin</artifactId>
+          <version>3.6.1</version>
+        </plugin>
+        <!-- see http://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging -->
+        <plugin>
+          <artifactId>maven-resources-plugin</artifactId>
+          <version>3.3.1</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.13.0</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>3.3.0</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-jar-plugin</artifactId>
+          <version>3.4.2</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-install-plugin</artifactId>
+          <version>3.1.2</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-deploy-plugin</artifactId>
+          <version>3.1.2</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+
+  <reporting>
+    <plugins>
+      <plugin>
+        <artifactId>maven-project-info-reports-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </reporting>
+</project>
